@@ -1,0 +1,26 @@
+.container .dados-endereco{
+    display: flex;
+    flex-direction: row;
+}
+
+.container .dados-endereco .aling-numero{
+    width: 100px;
+    align-items: baseline;
+    margin-left: 5px;
+}
+
+.container .dados-endereco .width-lc{
+    width: 300px;
+}
+
+.container .dados-endereco .estado{
+    width: 200px;
+    margin-left: 5px;
+    align-items: baseline;
+}
+
+.container .dados-endereco .uf{
+    width: 80px;
+    margin-left: 5px;
+    align-items: baseline;
+}

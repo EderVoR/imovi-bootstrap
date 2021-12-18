@@ -1,0 +1,30 @@
+*{
+    font-family: 'Lato', sans-serif;
+}
+
+.contact-area{
+    margin-top: 120px;
+    margin-bottom: 50px;
+}
+
+.contacto-box{
+    border: 1px solid #7a7a7a;
+    justify-content: center;
+}
+
+.contacto-box h4{
+    font-size: 20px;
+    justify-content: left;
+    padding: 2em;
+    margin-left: 2em;
+}
+
+.contact-dados{
+    margin-left: 150px;
+    margin-bottom: 10px;
+}
+
+.contact-dados button{
+    border-right: none;
+    width: 100px;
+}
