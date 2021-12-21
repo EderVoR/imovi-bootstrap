@@ -71,11 +71,19 @@
                             <input type="text" name="nome" id=nome class="form-control"
                                 placeholder="Informe seu nome completo">
                         </div>
-                        <div class="contact-dados w-25">
-                            <label>Telefone</label>
-                            <input type="tel" name="telefone" id="telefone" class="form-control"
-                                placeholder="(99) 99999 9999" onkeyup="formatar('telefone', this)">
-                            <script src="js/valida_campos.js"></script>
+                        <div class="contact-dados dados-endereco">
+                            <div class="cpf">
+                                <label>CPF/CNPJ</label>
+                                <input type="text" name="cpf" id="cpf" class="form-control"
+                                    placeholder="999.999.999-99" onkeyup="formatar('cpf', this)">
+                                <script src="js/valida_campos.js"></script>
+                            </div>
+                            <div class="telefone">
+                                <label>Telefone</label>
+                                <input type="tel" name="telefone" id="telefone" class="form-control"
+                                    placeholder="(99) 99999 9999" onkeyup="formatar('telefone', this)">
+                                <script src="js/valida_campos.js"></script>
+                            </div>
                         </div>
                         <div class="contact-dados w-25">
                             <label>CEP</label>

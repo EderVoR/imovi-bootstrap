@@ -32,4 +32,21 @@ function formatar(typeDado, input){
             input.value = numCep.slice(0,5) + "-" + numCep.slice(5,8)
         }
     }
+
+    //Formata o campo CPF/CNPJ
+    if(typeDado === "cpf"){
+        let numCpf = input.value.replace(/[.-/]/, '')
+        
+        if(numCpf.replace(/D/g, '').length >= 3 && numCpf.replace(/D/g, '').length <= 6){ 
+            numCpf = numCpf.replace(/D/g, '')
+            numCpf = numCpf.replace(/\s/g, '');           
+            input.value = /(\d{3})(\d{3})(\d{3})(\d{2})/ //.format(numCpf.slice(0,3).toString, numCpf.slice(3,7).toString)
+        }
+        else if (numCpf.replace(/D/g, '') >= 6 && numCpf.replace(/D/g, '') <= 9){
+            numCpf = numCpf.replace(/D/g, '')
+            numCpf = numCpf.replace(/\s/g, '');
+            console.log(numCpf)
+            input.value = numCpf.slice(0,3) + "." + numCpf.slice(3,7) + "." + numCpf.slice(7,10)
+        }
+    }
 }

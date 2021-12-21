@@ -13,6 +13,14 @@
     width: 300px;
 }
 
+.container .dados-endereco .cpf{
+    width: 205px;
+}
+
+.container .dados-endereco .telefone{
+    margin-left: 5px;
+}
+
 .container .dados-endereco .estado{
     width: 200px;
     margin-left: 5px;
